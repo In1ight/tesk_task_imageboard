@@ -1,0 +1,9 @@
+{% extends "task/base.html" %}
+{% block title %}Список изображений{% endblock %}
+{% block content %}
+    {% for post in posts %}
+    <h2>
+        <a href="{{ post.get_absolute_url }}">{{ post.name }}</a>
+    </h2>
+    {% endfor %}
+{% endblock %}

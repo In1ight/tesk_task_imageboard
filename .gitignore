@@ -1,0 +1,16 @@
+.idea/**
+locale/*/LC_MESSAGES/*.mo
+ansible/*.crt
+ansible/*.key
+ansible/*.retry
+ansible/inventory.*
+bower_components/**
+custom/**
+media/**
+project/local_settings.py
+project/secrets.py
+static/**
+db.sqlite3
+env/
+.env/
+venv/

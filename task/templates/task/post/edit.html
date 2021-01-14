@@ -1,0 +1,15 @@
+{% extends "task/base.html" %}
+{% block title %} {% endblock %}
+{% block content %}
+    {% with img=image.image %}
+        <a href="{% url 'task:post_list' %}">Назад к списку</a>
+        <h2>{{ img.name }}</h2>
+
+        <form action="." method="post" >
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="submit" value="Отправить">
+        <p> <img src="{{ img.url }}" alt=""></p>
+    </form>
+    {% endwith %}
+{% endblock %}
